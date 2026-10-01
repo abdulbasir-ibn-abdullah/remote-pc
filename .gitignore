@@ -1,0 +1,9 @@
+# Barcha papkalardagi maxfiy .env fayllarini bloklash
+**/.env
+**/.env.local
+**/.env.production
+**/.env.development
+
+# .env.example fayllariga esa har qanday papkada ruxsat beriladi
+# (Yuqoridagi qoidalar unga ta'sir qilmaydi, chunki nomi boshqacha)
+
