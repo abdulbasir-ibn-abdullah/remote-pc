@@ -16,5 +16,7 @@ if [ ! -f .env ]; then
   echo "======================"
 fi
 
+[ "${SETUP_ONLY:-0}" = "1" ] && exit 0
+
 exec uvicorn main:app --host 127.0.0.1 --port "${PORT:-8765}" \
   --proxy-headers --forwarded-allow-ips=127.0.0.1

@@ -27,6 +27,14 @@ vps.sizningdomen.uz {
 ```
 Tekshirish: `curl https://vps.sizningdomen.uz/health`
 
+### VPS da doimiy xizmat (terminal yopilsa ham ishlaydi)
+```bash
+cd backend && sudo ./install_service.sh
+```
+Xizmat nomi: `remote-fix-relay`. Boshqaruv: `sudo systemctl status|stop|restart remote-fix-relay`,
+loglar: `journalctl -u remote-fix-relay -f`.
+Firewall: faqat 80/443 ochiq (`sudo ufw allow 80,443/tcp`), 8765 ochilmaydi.
+
 ## 2. PC (agent)
 `agent/` papkasini PC ga ko'chiring (faqat Python 3, pip shart emas).
 ```bash
